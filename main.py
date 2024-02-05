@@ -35,7 +35,7 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
 
 
 def main():
-    with open("/content/drive/MyDrive/Worldle/world.json", "r", encoding="utf-8") as file:
+    with open("world.json", "r", encoding="utf-8") as file:
         countries_data = json.load(file)
 
     correct_country = random.choice(countries_data)
